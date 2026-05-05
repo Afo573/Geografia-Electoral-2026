@@ -46,11 +46,30 @@
       background: #ddd;
       margin: 50px 0;
     }
+    .credits-section {
+  font-size: 0.85rem; /* Un poco más pequeña que el cuerpo */
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.disclaimer {
+  background: #f1f1f1; /* Un gris muy suave para diferenciarlo */
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 3px solid #ccc;
+}
+
+.acknowledgments {
+  margin-top: 15px;
+  font-style: italic;
+}
     footer {
       margin-top: 60px;
       color: #888;
       font-size: 0.9rem;
     }
+    
   </style>
 </head>
 
@@ -163,9 +182,15 @@ La Península de Nicoya, un bastión liberacionista a partir de la segunda presi
     <div class="divider"></div>
 
     <p><strong>Consulta interactiva de los resultados:</strong></p>
-    <p>
-      Nota: En algunos centros penitenciarios la participación porcentual supera el 100% debido a cambios en la población empadronada.
-    </p>
+<section class="credits-section">
+  <p class="disclaimer">
+    <strong>Notas sobre los datos:</strong> La participación en los centros penitenciarios podría resultar imprecisa debido a que su padrón está sujeto a cambios constantes. Similarmente, en el Hogar de Larga Estancia Fray Casiano de Madrid no se registraron votos en las juntas receptoras correspondientes.
+  </p>
+
+  <p class="acknowledgments">
+    Se agradece a <strong>Timothy Hormigos (@bnstim)</strong> por proveer la plantilla técnica para las ventanas emergentes (pop-ups) del mapa interactivo.
+  </p>
+</section>
 
     <div class="flourish-embed flourish-map" data-src="visualisation/28777246"></div>
     <script src="https://public.flourish.studio/resources/embed.js"></script>
